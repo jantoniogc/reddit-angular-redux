@@ -12,9 +12,9 @@ import { AppComponent } from './app.component';
 import { PostsService } from './posts.service';
 
 import { AppReducer } from './../redux/app.reducer';
-import { PostEffects } from './../redux/post/post.effects';
-import { SelectedEffects } from './../redux/selected/selected.effects';
 import { PostComponent } from './post/post.component';
+import { PostEffects } from '../redux/post/post.effects';
+import { SelectedEffects } from '../redux/selected/selected.effects';
 
 @NgModule({
   declarations: [

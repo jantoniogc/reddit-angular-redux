@@ -14,7 +14,7 @@ import { SelectedSubredditAction } from './../redux/selected/selected.actions';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  topics: string[] = ['popular', 'gaming'];
+  topics: string[] = ['popular', 'gaming', 'news', 'television'];
   select: FormControl;
 
   posts: Post[] = [];

@@ -10,7 +10,10 @@ import { mergeMap, map } from 'rxjs/operators';
 
 @Injectable()
 export class SelectedEffects {
-
+  // para producir un efecto secundario necesitamos el decorador @Effect
+  // creamos un Observable de tipo Action, un efecto secundario siempre debe retornar una acción
+  // debe de estar pendiente de que se ejecute de la acción del tipo SELECT_SUBREDDIT
+  // esto retornará una nueva acción.
   @Effect() requestPosts$: Observable<Action> = this.actions$.ofType(SELECT_SUBREDDIT)
   .pipe(
     map((action: SelectedSubredditAction) => {
